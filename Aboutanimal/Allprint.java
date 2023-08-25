@@ -85,7 +85,7 @@ public class Allprint extends Animal {
 					break;
 				case "speed":
 					System.out.print("The spped of"+lion.getName());
-					lion.Speed(42);
+					lion.Speed(20);
 					break;
 				case "feed":
 					lion.feedit();
@@ -116,7 +116,7 @@ public class Allprint extends Animal {
 			case 2:
 				Cow cow = new Cow();
 				System.out.println("You've selected Cow.");
-				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content):  ");
+				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content,truth): ");
 				String Cow = scanner.nextLine();
 
 				switch (Cow) {
@@ -146,6 +146,9 @@ public class Allprint extends Animal {
 				case"content":
 					cow.content();
                     break;
+				case "truth":
+					cow.truth();
+					break;
 				default:
 					System.out.println("Invalid attribute choice");
 					break;
@@ -154,7 +157,7 @@ public class Allprint extends Animal {
 			case 3:
 				Sheep sheep=new Sheep();
 				System.out.println("You've selected Parrot.");
-				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content):  ");
+				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content,truth): ");
 				String Sheep = scanner.nextLine();
 
 				switch (Sheep) {
@@ -184,6 +187,9 @@ public class Allprint extends Animal {
 				case "content":
 				sheep.content();
 				break;
+				case "truth":
+					sheep.truth();
+					break;
 			
 				default:
 					System.out.println("Invalid attribute choice");
@@ -215,7 +221,7 @@ public class Allprint extends Animal {
 			case 1:
 				Salmon salmon=new Salmon();
 				System.out.println("You've selected Salmon.");
-				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content):  ");
+				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content,truth): ");
 				String Salmon = scanner.nextLine();
 
 				switch (Salmon) {
@@ -227,7 +233,7 @@ public class Allprint extends Animal {
 					break;
 				case "speed":
 					System.out.print("Speed: ");
-					salmon.Swim(0);
+					salmon.Speed(0);
 					break;
 				case "feed":
 					salmon.feedit();
@@ -245,6 +251,9 @@ public class Allprint extends Animal {
 				case "contant":
 					salmon.content();
 					break;
+				case "truth":
+					salmon.truth();
+					break;
 				default:
 					System.out.println("Invalid attribute choice");
 					break;
@@ -253,7 +262,7 @@ public class Allprint extends Animal {
 			case 2:
 				Clownfish clownfish=new Clownfish();
 				System.out.println("You've selected Clownfish.");
-				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content):   ");
+				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content,truth): ");
 				String Clownfish = scanner.nextLine();
 
 				switch (Clownfish) {
@@ -265,7 +274,7 @@ public class Allprint extends Animal {
 					break;
 				case "speed":
 					System.out.print("Speed: ");
-					clownfish.Swim(0);
+					clownfish.Speed(0);
 					break;
 				case "feed":
 					clownfish.feedit();
@@ -283,6 +292,9 @@ public class Allprint extends Animal {
 				case "contant":
 					clownfish.content();
 					break;
+				case "truth":
+					clownfish.truth();
+					break;
 				default:
 					System.out.println("Invalid attribute choice");
 					break;
@@ -291,7 +303,7 @@ public class Allprint extends Animal {
 			case 3:
 				Betta_Fish betta=new Betta_Fish();
 				System.out.println("You've selected Betta_Fish.");
-				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content):  ");
+				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content,truth): ");
 				String Betta_Fish = scanner.nextLine();
 
 				switch (Betta_Fish) {
@@ -303,7 +315,7 @@ public class Allprint extends Animal {
 					break;
 				case "speed":
 					System.out.print("Speed: ");
-					betta.Swim(0);
+					betta.Speed(0);
 					break;
 				case "feed":
 					betta.feedit();
@@ -321,7 +333,9 @@ public class Allprint extends Animal {
 				case "contant":
 					betta.content();
 					break;
-				
+				case "truth":
+					betta.truth();
+					break;
 				default:
 					System.out.println("Invalid attribute choice");
 					break;
@@ -351,7 +365,7 @@ public class Allprint extends Animal {
 			case 1:
 				Eagle eagle = new Eagle();
 				System.out.println("You've selected Eagle.");
-				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content):   ");
+				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content,truth): ");
 				String Eagle = scanner.nextLine();
 
 				switch (Eagle) {
@@ -381,7 +395,9 @@ public class Allprint extends Animal {
 				case "contant":
 					eagle.content();
 					break;
-				
+				case "truth":
+					eagle.truth();
+					break;
 				default:
 					System.out.println("Invalid attribute choice");
 					break;
@@ -391,7 +407,7 @@ public class Allprint extends Animal {
 			case 2:
 				Sparrwo sparrow = new Sparrwo();
 				System.out.println("You've selected sparrow.");
-				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content):  ");
+				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content,truth): ");
 				String Sparrwo = scanner.nextLine();
 
 				switch (Sparrwo) {
@@ -421,7 +437,9 @@ public class Allprint extends Animal {
 				case "contant":
 					sparrow.content();
 					break;
-				
+				case "truth":
+					sparrow.truth();
+					break;
 				default:
 					System.out.println("Invalid attribute choice");
 					break;
@@ -430,7 +448,7 @@ public class Allprint extends Animal {
 			case 3:
 				Parrot parrot=new Parrot();
 				System.out.println("You've selected Parrot.");
-				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content):  ");
+				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content,truth): ");
 				String Parrot = scanner.nextLine();
 
 				switch (Parrot) {
@@ -460,7 +478,9 @@ public class Allprint extends Animal {
 				case "contant":
 					parrot.content();
 					break;
-				
+				case "truth":
+					parrot.truth();
+					break;
 				default:
 					System.out.println("Invalid attribute choice");
 					break;
@@ -469,15 +489,17 @@ public class Allprint extends Animal {
 			default:
 				System.out.println("Invalid choice");
 				break;
+				
 			}
-			System.out.println("Do you want to choose another Birds? (yes/no)");
+			System.out.println("Do you want to choose another Fish? (yes/no)");
 			String continueChoice = scanner.nextLine();
 			if (!continueChoice.equalsIgnoreCase("yes")) {
 				break;
-			}
+		}
+	
 		}
 	}
-	
+
 	private void chooseReptils() {
 		while (true) {
 			System.out.println("Select the Reptils  ");
@@ -490,7 +512,7 @@ public class Allprint extends Animal {
 			case 1:
 				Crocodile crocodile = new Crocodile();
 				System.out.println("You've selected Crocodile.");
-				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content):  ");
+				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content,truth): ");
 				String Crocodile = scanner.nextLine();
 
 				switch (Crocodile) {
@@ -520,6 +542,9 @@ public class Allprint extends Animal {
 				case "contant":
 					crocodile.content();
 					break;
+				case "truth":
+					crocodile.truth();
+					break;
 				default:
 					System.out.println("Invalid attribute choice");
 					break;
@@ -529,7 +554,7 @@ public class Allprint extends Animal {
 			case 2:
 				Chameleon chameleon = new Chameleon();
 				System.out.println("You've selected Chameleon.");
-				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content):  ");
+				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content,truth): ");
 				String Chameleon = scanner.nextLine();
 
 				switch (Chameleon) {
@@ -559,6 +584,9 @@ public class Allprint extends Animal {
 				case "contant":
 					chameleon.content();
 					break;
+				case "truth":
+					chameleon.truth();
+					break;
 				default:
 					System.out.println("Invalid attribute choice");
 					break;
@@ -567,7 +595,7 @@ public class Allprint extends Animal {
 			case 3:
 				Turtle turtle = new Turtle();
 				System.out.println("You've selected Turtle.");
-				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content):  ");
+				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content,truth): ");
 				String Turtle = scanner.nextLine();
 
 				switch (Turtle) {
@@ -597,6 +625,9 @@ public class Allprint extends Animal {
 				case "contant":
 					turtle.content();
 					break;
+				case "truth":
+					turtle.truth();
+					break;
 				default:
 					System.out.println("Invalid attribute choice");
 					break;
@@ -605,19 +636,21 @@ public class Allprint extends Animal {
 			default:
 				System.out.println("Invalid choice");
 				break;
+				
 			}
 			System.out.println("Do you want to choose another Fish? (yes/no)");
 			String continueChoice = scanner.nextLine();
 			if (!continueChoice.equalsIgnoreCase("yes")) {
 				break;
-			}
+		}
+	
 		}
 	}
 
 	private void chooseHuman() {
 		while (true) {
 			System.out.println("You've selected Human.");
-			System.out.println("Enter the traits you want to know (name,fact, age, speed, feed,info,env,weather,content):  ");
+			System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content,truth): ");
 
 			Human human = new Human();
 
@@ -653,17 +686,20 @@ public class Allprint extends Animal {
 			case "contant":
 				human.content();
 				break;
+			case "truth":
+				human.truth();
+				break;
 				
 			default:
 				System.out.println("Invalid attribute choice");
 				break;
 			}
-			System.out.println("Do you want to choose another traits? (yes/no)");
-			String continueChoice = scanner.nextLine();
-			if (!continueChoice.equalsIgnoreCase("yes")) {
-				break;
-			}
-		}
+		    System.out.println("Do you want to choose another Human? (yes/no)");
+	        String continueChoice = scanner.nextLine();
+	        if (!continueChoice.equalsIgnoreCase("yes")) {
+	            break; 
+	        }
+	    }
 	}
 
 	private Typesanimal getAnimalType(int animalsTypeChoice) {

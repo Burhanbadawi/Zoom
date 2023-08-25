@@ -2,8 +2,9 @@ package birds;
 
 import Interface.Enviroments;
 import Interface.Feed;
+import Interface.Movment;
 
-public class Eagle extends Birds implements Feed,Enviroments{
+public class Eagle extends Birds implements Feed,Enviroments,Movment{
 	public Eagle() {
 		setName("Egle");
 		setAge("eagles in the wild live anywhere from 20 to 30 years on average");
@@ -30,6 +31,12 @@ public class Eagle extends Birds implements Feed,Enviroments{
 	public void content() {
 		System.out.println("Eagles are present in various European countries,");
 		
+		
+	}
+
+	@Override
+	public void movment() {
+	System.out.println("eagle movement is characterized by soaring on thermals");	
 		
 	}
 	

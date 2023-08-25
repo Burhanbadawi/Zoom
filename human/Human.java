@@ -15,9 +15,6 @@ public class Human extends Animal implements Feed,Enviroments {
 	}
 
 	
-	 
-	
-	 
 	
 
 

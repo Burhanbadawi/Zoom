@@ -2,12 +2,31 @@ package Aboutanimal;
 
 import Interface.Enviroments;
 import Interface.Feed;
+ 
 
+
+import birds.Birds;
+import birds.Eagle;
+import birds.Parrot;
+import birds.Sparrwo;
+import fish.Betta_Fish;
+import fish.Clownfish;
+import fish.Fish;
+import fish.Salmon;
+import human.Human;
+import mammals.Cow;
+import mammals.Lion;
+import mammals.Mammals;
+import mammals.Sheep;
+import reptiles.Chameleon;
+import reptiles.Crocodile;
+import reptiles.Reptiles;
 
 public class Animal {
 
 	public static  String name;
 	public  String age;
+	private static int speed;
 	
 	
 
@@ -26,39 +45,56 @@ public class Animal {
 	}
 	
 	
-	 public static void Swim  (int speed) {
-		  System.out.println("In the Water the"+getName()+"swimming Speed: " + speed + " Km/h");
+
+	 
+	    
+	    public void truth() {
+	        if (getName().equals("Lion") || getName().equals("Cow") || getName().equals("Sheep")) {
+	            System.out.println(getName() + " have mammary glands");
+	        }
+	        if (getName().equals("Salmon") || getName().equals("Clownfish") || getName().equals("Betta Fish")) {
+	            System.out.println(getName() + " lives in water");
+	        }
+	        if (getName().equals("Eagle") || getName().equals("Parrot") || getName().equals("Sparrwo")) {
+	            System.out.println(getName() + " have a wings");
+	        }
+	        if (getName().equals("Chameleon") || getName().equals("Crocodile") || getName().equals("Turtle")) {
+	            System.out.println(getName() + " the skin covers scales");
+	        }
+	        if (getName().equals("He can call himself whatever he wants")) {
+	        	
+	            System.out.println( "Humans uniquely communicate through language, enabling them to share ideas, emotions, and knowledge across cultures and generations.");
+	        }
+	        
 	    }
-	  public static void Speed(int speed) {
-	        System.out.println("Running Speed: " + speed + " Km/h");
+	    public   void Speed() {
+	    	 this.speed = speed;
+		        Speed();
 	       
 	    }
 
-	    public  void Speed(int runningSpeed, String  swimmingSpeed) {
+	    public  static void Speed(int speed) {
+	    	 System.out.println("Running Speed: " + speed + " Km/h");
+	    }
+	
+	    public  static void Speed(int runningSpeed, String  swimmingSpeed) {
 	        System.out.println("Running Speed: " + runningSpeed + " Km/h");
 	        System.out.println("In the Water the"+getName()+"swimming Speed: " + swimmingSpeed + " Km/h");
 	    }
 	    
-	    
-	    public void truth() {
-	        if (getName().equals("lion") || getName().equals("cow") || getName().equals("sheep")) {
-	            System.out.println(getName() + " have mammary glands");
-	        }
-	        
-	    }
 	public static void displayAllInformation(Animal animals) {
 	    
-	    System.out.println("Name: " + animals.getName());
+	    System.out.println("Name: " + Animal.getName());
 	    System.out.println("Age: " + animals.getAge());
-	    Speed(0);
-	    Swim(0);
-	    
+	  animals.Speed();
+     
 	    ((Feed) animals).feedit();
 	    ((Enviroments)animals).envi();
 	    ((Enviroments)animals).content();
 	    ((Enviroments)animals).weather();;
 	    animals.truth();
 	}
+	
 
 	
 }

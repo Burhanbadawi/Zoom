@@ -8,7 +8,7 @@ public class Lion extends Mammals implements Feed,Enviroments {
 	
 		 public Lion(){
 		 
-		setName("lion");
+		setName("Lion");
 		setAge(" around 10 to 14 years in the wild");
 
 		 }
