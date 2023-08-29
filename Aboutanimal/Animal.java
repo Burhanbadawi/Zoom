@@ -1,41 +1,41 @@
 package Aboutanimal;
 
+
+
 import Interface.Enviroments;
 import Interface.Feed;
- 
-
-
-import birds.Birds;
-import birds.Eagle;
-import birds.Parrot;
-import birds.Sparrwo;
-import fish.Betta_Fish;
-import fish.Clownfish;
-import fish.Fish;
-import fish.Salmon;
-import human.Human;
-import mammals.Cow;
-import mammals.Lion;
-import mammals.Mammals;
-import mammals.Sheep;
-import reptiles.Chameleon;
-import reptiles.Crocodile;
-import reptiles.Reptiles;
-
+import Interface.Movment;
 public class Animal {
 
-	public static  String name;
-	public  String age;
-	private static int speed;
+	private  String name;
+	private  String age;
+	protected int speed;
+
+	
+	
+	
+	
+	
+	
+	public int getSpeed() {
+		return speed;
+	}
+	public void setSpeed(int speed,String speed1) {
+		this.speed = speed;
+		this.speed(speed, speed1);
+	}
+	
+
+	
+	
 	
 	
 
-
-	public static  String getName() {
+	public   String getName() {
 		return name;
 	}
 	public void setName(String name) {
-		Animal.name = name;
+		this.name = name;
 	}
 	public String getAge() {
 		return age;
@@ -67,35 +67,37 @@ public class Animal {
 	        }
 	        
 	    }
-	    public   void Speed() {
-	    	 this.speed = speed;
-		        Speed();
-	       
+	   
+	    
+	    public static void speed(int runningSpeed) {
+	        System.out.println("Running Speed: " + runningSpeed + " Km/h");
+	        
+	      
 	    }
 
-	    public  static void Speed(int speed) {
-	    	 System.out.println("Running Speed: " + speed + " Km/h");
-	    }
+	    
 	
-	    public  static void Speed(int runningSpeed, String  swimmingSpeed) {
+	
+	    public  void speed(int runningSpeed, String  swimmingSpeed) {
+	    	
+	    	
+	    	
 	        System.out.println("Running Speed: " + runningSpeed + " Km/h");
-	        System.out.println("In the Water the"+getName()+"swimming Speed: " + swimmingSpeed + " Km/h");
+	        System.out.println("In the Water the"+"swimming Speed: " + swimmingSpeed );
+	        
+	      
+	      
 	    }
 	    
 	public static void displayAllInformation(Animal animals) {
 	    
-	    System.out.println("Name: " + Animal.getName());
-	    System.out.println("Age: " + animals.getAge());
-	  animals.Speed();
-     
-	    ((Feed) animals).feedit();
-	    ((Enviroments)animals).envi();
-	    ((Enviroments)animals).content();
-	    ((Enviroments)animals).weather();;
-	    animals.truth();
+	    System.out.println("FINSHED");
 	}
+
 	
 
 	
+
+
+
 }
-

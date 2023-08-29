@@ -2,12 +2,10 @@ package birds;
 
 import Interface.Enviroments;
 import Interface.Feed;
+import Interface.Movment;
 
-public class  Parrot extends Birds implements Feed,Enviroments{
-	 public  Parrot() {
-		 setName(" Parrot");
-		 setAge("around 15 to 80 years depending on the species.");
-	 }
+public class  Parrot extends Birds implements Feed,Enviroments,Movment{
+	
 
 	@Override
 	public void feedit() {
@@ -30,6 +28,11 @@ public class  Parrot extends Birds implements Feed,Enviroments{
 	@Override
 	public void content() {
 		System.out.println("South America, Africa, Asia, and Australia");
+		
+	}
+	@Override
+	public void movment() {
+	System.out.println("The" +getName()+"fly");
 		
 	}
 }

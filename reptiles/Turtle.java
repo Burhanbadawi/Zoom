@@ -2,12 +2,9 @@ package reptiles;
 
 import Interface.Enviroments;
 import Interface.Feed;
+import Interface.Movment;
 
-public class Turtle extends Reptiles implements Feed,Enviroments{
-	public Turtle() {
-		setName("Turtle");
-		setAge("Turtle can  live 40 to 60 years");
-}
+public class Turtle extends Reptiles implements Feed,Enviroments,Movment{
 
 	@Override
 	public void feedit() {
@@ -30,6 +27,11 @@ public class Turtle extends Reptiles implements Feed,Enviroments{
 	@Override
 	public void content() {
 		System.out.println( "Turtles inhabit a range of environments in North America");
+		
+	}
+	@Override
+	public void movment() {
+	System.out.println("The" +getName()+"walk/swim");
 		
 	}
 }

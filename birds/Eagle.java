@@ -5,11 +5,7 @@ import Interface.Feed;
 import Interface.Movment;
 
 public class Eagle extends Birds implements Feed,Enviroments,Movment{
-	public Eagle() {
-		setName("Egle");
-		setAge("eagles in the wild live anywhere from 20 to 30 years on average");
-	}
-
+	
 	@Override
 	public void feedit() {
 	System.out.println("Eagles primarily eat a diet of fish, birds, small mammals, and carrion.");
@@ -34,12 +30,12 @@ public class Eagle extends Birds implements Feed,Enviroments,Movment{
 		
 	}
 
+	
 	@Override
 	public void movment() {
-	System.out.println("eagle movement is characterized by soaring on thermals");	
+	System.out.println("The" +getName()+"Fly");
 		
 	}
-	
 
 
 }

@@ -2,13 +2,10 @@ package mammals;
 
 import Interface.Enviroments;
 import Interface.Feed;
+import Interface.Movment;
 
-public class Cow extends Mammals implements Feed,Enviroments{
-	public Cow() {
-		 setName("Cow");
-		 setAge(" around 4 to 7 years ");
-	 }
-
+public class Cow extends Mammals implements Feed,Enviroments,Movment{
+	
 	@Override
 	public void feedit() {
 		System.out.println("Cows are herbivores and mainly consume grasses and plant material.");
@@ -30,6 +27,12 @@ public class Cow extends Mammals implements Feed,Enviroments{
 	@Override
 	public void content() {
 		System.out.println("Cattle are widespread across the United States, Canada, Mexico, and other North American countries. ");
+		
+	}
+
+	@Override
+	public void movment() {
+	System.out.println("The" +getName()+"Walk");
 		
 	}
 	

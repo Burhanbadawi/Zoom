@@ -2,13 +2,10 @@ package reptiles;
 
 import Interface.Enviroments;
 import Interface.Feed;
+import Interface.Movment;
 
-public class Chameleon extends Reptiles implements Feed,Enviroments{
-	public Chameleon() {
-		setName("Chameleon");
-		setAge("Chameleons generally have a lifespan of around 2 to 3 years in the wild");
-	}
-
+public class Chameleon extends Reptiles implements Feed,Enviroments,Movment{
+	
 	@Override
 	public void feedit() {
 		System.out.println("Chameleons primarily eat insects, such as crickets, grasshoppers, flies, and other small arthropods");
@@ -30,6 +27,11 @@ public class Chameleon extends Reptiles implements Feed,Enviroments{
 	@Override
 	public void content() {
 		System.out.println( " Chameleons are widespread in various countries across Africa");
+		
+	}
+	@Override
+	public void movment() {
+	System.out.println("The" +getName()+"walk/climb");
 		
 	}
 }

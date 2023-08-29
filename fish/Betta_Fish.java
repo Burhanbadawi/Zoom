@@ -2,14 +2,10 @@ package fish;
 
 import Interface.Enviroments;
 import Interface.Feed;
+import Interface.Movment;
 
-public class Betta_Fish extends Fish implements Feed,Enviroments {
-	public Betta_Fish() {
-		setName("Betta Fish");
-		setAge(" Around 2 to 3 years (up to 4 or 5 years with proper care)");
-	
-		
-	}
+public class Betta_Fish extends Fish implements Feed,Enviroments,Movment {
+
 
 	@Override
 	public void feedit() {
@@ -30,6 +26,11 @@ public class Betta_Fish extends Fish implements Feed,Enviroments {
 	@Override
 	public void content() {
 		System.out.println("Betta fish are native to Thailand");
+		
+	}
+	@Override
+	public void movment() {
+	System.out.println("The" +getName()+"Swim");
 		
 	}
 }

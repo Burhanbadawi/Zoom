@@ -2,13 +2,10 @@ package fish;
 
 import Interface.Enviroments;
 import Interface.Feed;
+import Interface.Movment;
 
-public class Salmon extends Fish  implements Feed,Enviroments {
-	public Salmon() {
-		setName("Salmon");
-		setAge("Around 3 to 7 years.");
-		
-	}
+public class Salmon extends Fish  implements Feed,Enviroments,Movment {
+	
 
 	@Override
 	public void feedit() {
@@ -33,4 +30,9 @@ public class Salmon extends Fish  implements Feed,Enviroments {
 	public void content() {
 		System.out.println("Atlantic salmon (Salmo salar) are native to the North Atlantic Ocean");
 	} 
+	@Override
+	public void movment() {
+	System.out.println("The" +getName()+"Swim");
+		
+	}
 }

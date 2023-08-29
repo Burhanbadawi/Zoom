@@ -9,10 +9,7 @@ public class Human extends Animal implements Feed,Enviroments {
 
 	
 
-	public Human() {
-		setName("He can call himself whatever he wants");
-		setAge(" many people now live well into their 80s, 90s, and even over 100 years");
-	}
+	
 
 	
 	

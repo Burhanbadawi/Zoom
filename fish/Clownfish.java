@@ -2,13 +2,10 @@ package fish;
 
 import Interface.Enviroments;
 import Interface.Feed;
+import Interface.Movment;
 
-public class Clownfish extends Fish implements Feed,Enviroments{
-	public Clownfish() {
-		setName("Clownfish");
-		setAge("Around 3 to 5 years");
-		
-	}
+public class Clownfish extends Fish implements Feed,Enviroments,Movment{
+
 
 	@Override
 	public void feedit() {
@@ -31,6 +28,11 @@ public class Clownfish extends Fish implements Feed,Enviroments{
 	@Override
 	public void content() {
 		System.out.println("Clownfish can be found in various parts of the Indian Ocean");
+		
+	}
+	@Override
+	public void movment() {
+	System.out.println("The" +getName()+"Swim");
 		
 	}
 	 

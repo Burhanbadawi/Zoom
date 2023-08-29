@@ -3,15 +3,11 @@ package mammals;
 
 import Interface.Enviroments;
 import Interface.Feed;
+import Interface.Movment;
 
-public class Lion extends Mammals implements Feed,Enviroments {
+public class Lion extends Mammals implements Feed,Enviroments,Movment {
 	
-		 public Lion(){
-		 
-		setName("Lion");
-		setAge(" around 10 to 14 years in the wild");
 
-		 }
 		
 		 
 
@@ -39,10 +35,15 @@ public class Lion extends Mammals implements Feed,Enviroments {
 
 		@Override
 		public void envi() {
+		System.out.println("Open grasslands and savannas.");	
 		
 			
 		}
-		
+		@Override
+		public void movment() {
+		System.out.println("The " +getName()+" Walk");
+			
+		}
 
 		 
 	 }

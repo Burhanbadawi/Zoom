@@ -2,12 +2,10 @@ package birds;
 
 import Interface.Enviroments;
 import Interface.Feed;
+import Interface.Movment;
 
-public  class Sparrwo extends Birds implements Feed,Enviroments{
-	 public Sparrwo() {
-		 setName("Sparrow");
-		 setAge("sparrows live around 3 to 5 years. However");
-	 }
+public  class Sparrwo extends Birds implements Feed,Enviroments,Movment{
+
 
 	@Override
 	public void feedit() {
@@ -34,6 +32,10 @@ public  class Sparrwo extends Birds implements Feed,Enviroments{
 		
 	}
 
-	
+	@Override
+	public void movment() {
+	System.out.println("The" +getName()+"Fly");
+		
+	}
 }
  
