@@ -2,6 +2,8 @@ package Aboutanimal;
 
 import java.util.Scanner;
 
+
+
 import birds.Birds;
 import birds.Eagle;
 import birds.Parrot;
@@ -27,6 +29,7 @@ public class Allprint extends Animal {
 	public Allprint(Scanner scanner) {
 		this.scanner = scanner;
 	}
+	Typesanimal typesanimals=Typesanimal.MAMMALS;
 
 	public void animals() {
 		while (true) {
@@ -123,8 +126,9 @@ public class Allprint extends Animal {
 				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content,truth,mov): ");
 				String Cow = scanner.nextLine();
 			
-				 setName("Cow");
-				 setAge(" around 4 to 7 years ");
+				 cow.setName("Cow");
+				 cow.setAge(" around 4 to 7 years ");
+				 cow.setSpeed(10, null);
 				switch (Cow) {
 				case "name":
 					System.out.println("Name: " + cow.getName());
@@ -134,7 +138,7 @@ public class Allprint extends Animal {
 					break;
 				case "speed":
 					System.out.print("Speed: ");
-					speed(30);
+					cow.speed(getSpeed());
 					break;
 				case "feed":
 					cow.feedit();
@@ -169,8 +173,9 @@ public class Allprint extends Animal {
 				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content,truth,mov): ");
 				String Sheep = scanner.nextLine();
 			    speed(30);
-				setName("Sheep");
-				setAge(" about 6 to 12 years ");
+				sheep.setName("Sheep");
+				sheep.setAge(" about 6 to 12 years ");
+				sheep.setSpeed(20, null);
 				switch (Sheep) {
 				case "name":
 					System.out.println("Name: " + sheep.getName());
@@ -179,6 +184,7 @@ public class Allprint extends Animal {
 					System.out.println("Age: " + sheep.getAge());
 					break;
 				case "speed":
+					sheep.speed(sheep.getSpeed());
 					System.out.print("Speed: ");
 				
 					break;
@@ -223,6 +229,7 @@ public class Allprint extends Animal {
 
 	private void chooseFish() {
 		while (true) {
+			Typesanimal typesanimals=Typesanimal.FISH;
 			System.out.println("Select the Fish  ");
 			System.out.println("1. Salmon");
 			System.out.println("2. Clownfish");
@@ -237,8 +244,9 @@ public class Allprint extends Animal {
 				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content,truth,mov): ");
 				String Salmon = scanner.nextLine();
 				speed(14);
-				setName("Salmon");
-				setAge("Around 3 to 7 years.");
+				salmon.setName("Salmon");
+				salmon.setAge("Around 3 to 7 years.");
+				salmon.setSpeed(10);
 				
 				switch (Salmon) {
 				case "name":
@@ -249,7 +257,7 @@ public class Allprint extends Animal {
 					break;
 				case "speed":
 					System.out.print("Speed: ");
-				
+				salmon.speed(getSpeed());
 					break;
 				case "feed":
 					salmon.feedit();
@@ -283,8 +291,9 @@ public class Allprint extends Animal {
 				System.out.println("You've selected Clownfish.");
 				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content,truth,mov): ");
 				String Clownfish = scanner.nextLine();
-				setName("Clownfish");
-				setAge("Around 3 to 5 years");
+				clownfish.setName("Clownfish");
+				clownfish.setAge("Around 3 to 5 years");
+				clownfish.setSpeed(30);
 				switch (Clownfish) {
 				case "name":
 					System.out.println("Name: " + clownfish.getName());
@@ -294,7 +303,7 @@ public class Allprint extends Animal {
 					break;
 				case "speed":
 					System.out.print("Speed: ");
-					clownfish.speed(9);
+					clownfish.speed(getSpeed());
 					break;
 				case "feed":
 					clownfish.feedit();
@@ -328,8 +337,9 @@ public class Allprint extends Animal {
 				System.out.println("You've selected Betta_Fish.");
 				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content,truth,mov): ");
 				String Betta_Fish = scanner.nextLine();
-				setName("Betta Fish");
-				setAge(" Around 2 to 3 years (up to 4 or 5 years with proper care)");
+				betta.setName("Betta Fish");
+				betta.setAge(" Around 2 to 3 years (up to 4 or 5 years with proper care)");
+				betta.setSpeed(6);
 				switch (Betta_Fish) {
 				case "name":
 					System.out.println("Name: " + betta.getName());
@@ -339,7 +349,7 @@ public class Allprint extends Animal {
 					break;
 				case "speed":
 					System.out.print("Speed: ");
-					betta.speed(7);
+					betta.speed(getSpeed());
 					break;
 				case "feed":
 					betta.feedit();
@@ -381,6 +391,7 @@ public class Allprint extends Animal {
 	}
 
 	private void chooseBirds() {
+		Typesanimal typesanimals=Typesanimal.BIRDS;
 		while (true) {
 			System.out.println("Select the Birds  ");
 			System.out.println("1. Eagle");
@@ -396,7 +407,9 @@ public class Allprint extends Animal {
 				System.out.println("You've selected Eagle.");
 				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content,truth,mov): ");
 				String Eagle = scanner.nextLine();
-
+eagle.setName("Eagle");
+eagle.setAge("20 years ");
+eagle.setSpeed(165);
 				switch (Eagle) {
 				case "name":
 					System.out.println("Name: " + eagle.getName());
@@ -406,7 +419,7 @@ public class Allprint extends Animal {
 					break;
 				case "speed":
 					System.out.print("Speed: ");
-					eagle.speed(160);
+					eagle.speed(getSpeed());
 					break;
 				case "feed":
 					eagle.feedit();
@@ -441,8 +454,9 @@ public class Allprint extends Animal {
 				System.out.println("You've selected sparrow.");
 				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content,truth,mov): ");
 				String Sparrwo = scanner.nextLine();
-				 setName("Sparrow");
-				 setAge("sparrows live around 3 to 5 years. However");
+				 sparrow.setName("Sparrow");
+				 sparrow.setAge("sparrows live around 3 to 5 years. However");
+				 sparrow.setSpeed(40);
 				switch (Sparrwo) {
 				case "name":
 					System.out.println("Name: " + sparrow.getName());
@@ -452,7 +466,7 @@ public class Allprint extends Animal {
 					break;
 				case "speed":
 					System.out.print("Speed: ");
-					sparrow.speed(65);
+					sparrow.speed(getSpeed());
 					break;
 				case "feed":
 					sparrow.feedit();
@@ -486,8 +500,9 @@ public class Allprint extends Animal {
 				System.out.println("You've selected Parrot.");
 				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content,truth,mov): ");
 				String Parrot = scanner.nextLine();
-				setName(" Parrot");
-				 setAge("around 15 to 80 years depending on the species.");
+				parrot.setName(" Parrot");
+				 parrot.setAge("around 15 to 80 years depending on the species.");
+				 parrot.setSpeed(20);
 				switch (Parrot) {
 				case "name":
 					System.out.println("Name: " + parrot.getName());
@@ -497,7 +512,7 @@ public class Allprint extends Animal {
 					break;
 				case "speed":
 					System.out.print("Speed: ");
-					parrot.speed(40);
+					parrot.speed(getSpeed());
 					break;
 				case "feed":
 					parrot.feedit();
@@ -601,8 +616,9 @@ public class Allprint extends Animal {
 				System.out.println("You've selected Chameleon.");
 				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content,truth,mov): ");
 				String Chameleon = scanner.nextLine();
-				setName("Chameleon");
-				setAge("Chameleons generally have a lifespan of around 2 to 3 years in the wild");
+				chameleon.setName("Chameleon");
+				chameleon.setAge("Chameleons generally have a lifespan of around 2 to 3 years in the wild");
+				chameleon.setSpeed(60, "15-10");
 				switch (Chameleon) {
 				case "name":
 					System.out.println("Name: " + chameleon.getName());
@@ -646,8 +662,9 @@ public class Allprint extends Animal {
 				System.out.println("You've selected Turtle.");
 				System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content,truth,mov): ");
 				String Turtle = scanner.nextLine();
-				setName("Turtle");
-				setAge("Turtle can  live 40 to 60 years");
+				turtle.setName("Turtle");
+				turtle.setAge("Turtle can  live 40 to 60 years");
+				turtle.setSpeed(3,"6");
 				switch (Turtle) {
 				case "name":
 					System.out.println("Name: " + turtle.getName());
@@ -705,10 +722,11 @@ public class Allprint extends Animal {
 		while (true) {
 			System.out.println("You've selected Human.");
 			System.out.println("Enter the traits you want to know (name, age, speed, feed,info,env,weather,content,truth,mov): ");
-			setName("He can call himself whatever he wants");
-			setAge(" many people now live well into their 80s, 90s, and even over 100 years");
+	
+			
 			Human human = new Human();
-
+			human.setName("He can call himself whatever he wants");
+			human.setAge(" many people now live well into their 80s, 90s, and even over 100 years");
 			String Human = scanner.nextLine();
 
 			switch (Human) {
@@ -720,13 +738,13 @@ public class Allprint extends Animal {
 				break;
 			case "speed":
 				System.out.print("Speed: ");
-				human.speed(35,"around 5-6 miles");
+				human.speed(getSpeed());
 				break;
 			case "feed":
 				human.feedit();
 				break;
 			case "fact":
-				//human.fact(true);
+				human.truth();
 				break;
 			case "info":
 				System.out.println("About human");
@@ -756,6 +774,31 @@ public class Allprint extends Animal {
 	            break; 
 	        }
 	    }
+		
+	}
+
+	
+	private Typesanimal Typesanimal (int countening ) {
+		System.out.println("If you need waht a types animal is a most in earth");
+		System.out.println("1-Most Common Animal Types: ");
+		System.out.println("2-Moderately Common Animal Types: ");
+		System.out.println("3-Least Common Animal Types: ");
+		switch (countening) {
+		
+		case 1:
+			System.out.println("The most animal types :");
+			return Typesanimal.MAMMALS;
+		case 2:
+			System.out.println("The Moderately animal types: ");
+			return Typesanimal.BIRDS;
+		case 3:
+			System.out.println("The least animal types :");
+			return Typesanimal.FISH;
+	
+		default:
+			return null;
+		}
+
 	}
 
 
